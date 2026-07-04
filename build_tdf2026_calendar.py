@@ -134,23 +134,33 @@ for stage, start, end, route, dist, typ, url in events:
         summary = f'⏳ 环法2026 第{stage}赛段: {route}'
         status = '未开赛'
     desc_lines = [
-        '2026环法自行车赛',
-        f'第{stage}赛段',
-        f'路线: {route}',
-        f'类型: {typ}',
-        f'距离: {dist}',
-        f'状态: {status}',
+        '2026 环法自行车赛',
+        f'第 {stage} 赛段｜{route}',
+        '',
+        '【赛段信息】',
+        f'类型：{typ}',
+        f'距离：{dist}',
+        f'北京时间：{start[9:11]}:{start[11:13]}',
+        f'状态：{status}',
     ]
     if completed:
-        desc_lines += [f'赛段冠军: {winner}']
+        desc_lines += [
+            '',
+            '【赛果】',
+            f'赛段冠军：{winner}',
+        ]
         if time_result:
-            desc_lines += [f'冠军成绩: {time_result}']
+            desc_lines += [f'冠军成绩：{time_result}']
         if yellow:
-            desc_lines += [f'黄衫/总成绩领先: {yellow}']
+            desc_lines += [f'黄衫 / 总成绩领先：{yellow}']
         if r.get('updated_at'):
-            desc_lines += [f'赛果更新时间: {r["updated_at"]}']
-    desc_lines += [f'北京时间: {start[9:11]}:{start[11:13]}', f'官方来源: {url}']
-    desc = '\\n'.join(desc_lines)
+            desc_lines += [f'赛果更新时间：{r["updated_at"]}']
+    desc_lines += [
+        '',
+        '【来源】',
+        url,
+    ]
+    desc = '\n'.join(desc_lines)
     lines += [
         'BEGIN:VEVENT',
         f'UID:tdf2026-stage-{stage}@tourdefrance2026',
