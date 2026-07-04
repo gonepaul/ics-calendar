@@ -1,5 +1,15 @@
 {
-  "updated_at": null,
+  "updated_at": "2026-07-04 18:29 UTC",
   "stages": {
+    "1": {
+      "completed": true,
+      "winner": "J. VINGEGAARD",
+      "time": "00h 21' 47''",
+      "yellow_jersey": "J. VINGEGAARD",
+      "team": "TEAM VISMA | LEASE A BIKE",
+      "updated_at": "2026-07-04 18:27 UTC",
+      "sequence": 2,
+      "source": "https://www.letour.fr/en/rankings/stage-1"
+    }
   }
 }
