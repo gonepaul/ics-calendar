@@ -2,10 +2,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 import json
 
-ROOT = Path('/var/minis/workspace/ics-calendar')
+ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'tdf2026_beijing.ics'
 RESULTS = ROOT / 'tdf2026_results.json'
-now = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+now_dt = datetime.now(timezone.utc)
+now = now_dt.strftime('%Y%m%dT%H%M%SZ')
 
 events = [
 (1,'20260704T230500','20260705T011600','Barcelone > Barcelone','19.6 km','Team Time-Trial','https://www.letour.fr/en/stage-1'),
@@ -50,10 +51,48 @@ def fold(line):
     out.append(line)
     return '\r\n'.join(out)
 
+def calendar_refresh_interval(now_dt, events, stage_results):
+    """Return an RFC5545 duration tuned around expected stage finishes.
+
+    Strategy:
+    - Before race week: daily refresh.
+    - On/near race days before finish: schedule next refresh close to expected finish.
+    - From 30 min before expected finish until 3 h after finish, refresh every 5 min
+      while the stage has no result yet.
+    - After today's result is in, back off to 6 h until next stage day, otherwise daily.
+    """
+    from datetime import timedelta
+    bj = timezone(timedelta(hours=8))
+    now_bj = now_dt.astimezone(bj)
+    pending_windows = []
+    next_end = None
+    for stage, start, end, *_ in events:
+        completed = bool(stage_results.get(stage, {}).get('completed'))
+        end_dt = datetime.strptime(end, '%Y%m%dT%H%M%S').replace(tzinfo=bj)
+        if not completed:
+            if end_dt >= now_bj:
+                next_end = end_dt if next_end is None else min(next_end, end_dt)
+            pending_windows.append((stage, end_dt))
+    for stage, end_dt in pending_windows:
+        if end_dt - timedelta(minutes=30) <= now_bj <= end_dt + timedelta(hours=3):
+            return 'PT5M'
+    if next_end is None:
+        return 'P7D'
+    delta = next_end - now_bj
+    if delta <= timedelta(hours=6):
+        return 'PT30M'
+    if delta <= timedelta(days=1):
+        return 'PT2H'
+    if delta <= timedelta(days=3):
+        return 'PT6H'
+    return 'P1D'
+
+
 if not RESULTS.exists():
     RESULTS.write_text(json.dumps({"updated_at": None, "stages": {}}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 results = json.loads(RESULTS.read_text(encoding='utf-8'))
 stage_results = {int(k): v for k, v in results.get('stages', {}).items()}
+refresh_interval = calendar_refresh_interval(now_dt, events, stage_results)
 
 lines = [
 'BEGIN:VCALENDAR',
@@ -64,8 +103,8 @@ lines = [
 'X-WR-CALNAME:2026环法自行车赛',
 'X-WR-TIMEZONE:Asia/Shanghai',
 'X-WR-CALDESC:2026 Tour de France schedule and results in Beijing Time - 21 stages',
-'REFRESH-INTERVAL;VALUE=DURATION:P1D',
-'X-PUBLISHED-TTL:P1D',
+f'REFRESH-INTERVAL;VALUE=DURATION:{refresh_interval}',
+f'X-PUBLISHED-TTL:{refresh_interval}',
 'BEGIN:VTIMEZONE',
 'TZID:Asia/Shanghai',
 'X-LIC-LOCATION:Asia/Shanghai',
