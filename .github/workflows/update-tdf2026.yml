@@ -1,1 +1,37 @@
+name: Update Tour de France 2026 calendar
 
+on:
+  schedule:
+    # Regular low-frequency refresh before/after the race.
+    - cron: '17 2 * * *'
+    # Race-window refresh: every 15 minutes during likely Beijing finish windows.
+    # UTC 09-18 roughly covers Beijing 17:00-02:00, the expected finish/result windows.
+    - cron: '*/15 9-18 4-26 7 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build ICS
+        run: python3 build_tdf2026_calendar.py
+
+      - name: Commit updated calendar
+        run: |
+          if git diff --quiet; then
+            echo "No calendar changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tdf2026_beijing.ics
+          git commit -m "Auto-update Tour de France calendar"
+          git push
