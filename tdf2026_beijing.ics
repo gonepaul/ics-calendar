@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:2026环法自行车赛
 X-WR-TIMEZONE:Asia/Shanghai
-X-WR-CALDESC:2026 Tour de France schedule in Beijing Time - 21 stages
-REFRESH-INTERVAL;VALUE=DURATION:PT6H
-X-PUBLISHED-TTL:PT6H
+X-WR-CALDESC:2026 Tour de France schedule and results in Beijing Time - 21 stages
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
 BEGIN:VTIMEZONE
 TZID:Asia/Shanghai
 X-LIC-LOCATION:Asia/Shanghai
@@ -20,16 +20,16 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:tdf2026-stage-1@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260704T230500
 DTEND;TZID=Asia/Shanghai:20260705T011600
-SUMMARY:环法2026 第1赛段: Barcelone > Barcelone
+SUMMARY:⏳ 环法2026 第1赛段: Barcelone > Barcelone
 DESCRIPTION:2026环法自行车赛\\n第1赛段\\n路线: Barcelone > Bar
- celone\\n类型: Team Time-Trial\\n距离: 19.6 km\\n北京时间: 23:05
- \\n官方来源: https://www.letour.fr/en/stage-1
+ celone\\n类型: Team Time-Trial\\n距离: 19.6 km\\n状态: 未开赛\\
+ n北京时间: 23:05\\n官方来源: https://www.letour.fr/en/stage-1
 LOCATION:Barcelone > Barcelone
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -39,21 +39,21 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第1赛段: Barcelone > Barcelone 即将开始
+DESCRIPTION:⏳ 环法2026 第1赛段: Barcelone > Barcelone 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-2@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260705T194500
 DTEND;TZID=Asia/Shanghai:20260705T234600
-SUMMARY:环法2026 第2赛段: Tarragone > Barcelone
+SUMMARY:⏳ 环法2026 第2赛段: Tarragone > Barcelone
 DESCRIPTION:2026环法自行车赛\\n第2赛段\\n路线: Tarragone > Bar
- celone\\n类型: Flat/Hilly\\n距离: 168.5 km\\n北京时间: 19:45\\n
- 官方来源: https://www.letour.fr/en/stage-2
+ celone\\n类型: Flat/Hilly\\n距离: 168.5 km\\n状态: 未开赛\\n北
+ 京时间: 19:45\\n官方来源: https://www.letour.fr/en/stage-2
 LOCATION:Tarragone > Barcelone
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -63,21 +63,21 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第2赛段: Tarragone > Barcelone 即将开始
+DESCRIPTION:⏳ 环法2026 第2赛段: Tarragone > Barcelone 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-3@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260706T181000
 DTEND;TZID=Asia/Shanghai:20260706T232300
-SUMMARY:环法2026 第3赛段: Granollers > Les Angles
+SUMMARY:⏳ 环法2026 第3赛段: Granollers > Les Angles
 DESCRIPTION:2026环法自行车赛\\n第3赛段\\n路线: Granollers > Le
- s Angles\\n类型: Mountain\\n距离: 195.9 km\\n北京时间: 18:10\\n
- 官方来源: https://www.letour.fr/en/stage-3
+ s Angles\\n类型: Mountain\\n距离: 195.9 km\\n状态: 未开赛\\n北
+ 京时间: 18:10\\n官方来源: https://www.letour.fr/en/stage-3
 LOCATION:Granollers > Les Angles
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -87,21 +87,22 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第3赛段: Granollers > Les Angles 即将开始
+DESCRIPTION:⏳ 环法2026 第3赛段: Granollers > Les Angles 即将开
+ 始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-4@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260707T191000
 DTEND;TZID=Asia/Shanghai:20260707T234700
-SUMMARY:环法2026 第4赛段: Carcassonne > Foix
+SUMMARY:⏳ 环法2026 第4赛段: Carcassonne > Foix
 DESCRIPTION:2026环法自行车赛\\n第4赛段\\n路线: Carcassonne > F
- oix\\n类型: Hilly\\n距离: 181.9 km\\n北京时间: 19:10\\n官方来
- 源: https://www.letour.fr/en/stage-4
+ oix\\n类型: Hilly\\n距离: 181.9 km\\n状态: 未开赛\\n北京时
+ 间: 19:10\\n官方来源: https://www.letour.fr/en/stage-4
 LOCATION:Carcassonne > Foix
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -111,21 +112,21 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第4赛段: Carcassonne > Foix 即将开始
+DESCRIPTION:⏳ 环法2026 第4赛段: Carcassonne > Foix 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-5@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260708T200500
 DTEND;TZID=Asia/Shanghai:20260708T235600
-SUMMARY:环法2026 第5赛段: Lannemezan > Pau
+SUMMARY:⏳ 环法2026 第5赛段: Lannemezan > Pau
 DESCRIPTION:2026环法自行车赛\\n第5赛段\\n路线: Lannemezan > Pa
- u\\n类型: Flat\\n距离: 158.3 km\\n北京时间: 20:05\\n官方来源
- : https://www.letour.fr/en/stage-5
+ u\\n类型: Flat\\n距离: 158.3 km\\n状态: 未开赛\\n北京时间: 
+ 20:05\\n官方来源: https://www.letour.fr/en/stage-5
 LOCATION:Lannemezan > Pau
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -135,21 +136,21 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第5赛段: Lannemezan > Pau 即将开始
+DESCRIPTION:⏳ 环法2026 第5赛段: Lannemezan > Pau 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-6@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260709T182500
 DTEND;TZID=Asia/Shanghai:20260710T000500
-SUMMARY:环法2026 第6赛段: Pau > Gavarnie-Gèdre
+SUMMARY:⏳ 环法2026 第6赛段: Pau > Gavarnie-Gèdre
 DESCRIPTION:2026环法自行车赛\\n第6赛段\\n路线: Pau > Gavarnie-
- Gèdre\\n类型: Mountain\\n距离: 186.2 km\\n北京时间: 18:25\\n官
- 方来源: https://www.letour.fr/en/stage-6
+ Gèdre\\n类型: Mountain\\n距离: 186.2 km\\n状态: 未开赛\\n北
+ 京时间: 18:25\\n官方来源: https://www.letour.fr/en/stage-6
 LOCATION:Pau > Gavarnie-Gèdre
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -159,21 +160,21 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第6赛段: Pau > Gavarnie-Gèdre 即将开始
+DESCRIPTION:⏳ 环法2026 第6赛段: Pau > Gavarnie-Gèdre 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-7@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260710T191500
 DTEND;TZID=Asia/Shanghai:20260710T233500
-SUMMARY:环法2026 第7赛段: Hagetmau > Bordeaux
+SUMMARY:⏳ 环法2026 第7赛段: Hagetmau > Bordeaux
 DESCRIPTION:2026环法自行车赛\\n第7赛段\\n路线: Hagetmau > Bord
- eaux\\n类型: Flat\\n距离: 175.1 km\\n北京时间: 19:15\\n官方来
- 源: https://www.letour.fr/en/stage-7
+ eaux\\n类型: Flat\\n距离: 175.1 km\\n状态: 未开赛\\n北京时
+ 间: 19:15\\n官方来源: https://www.letour.fr/en/stage-7
 LOCATION:Hagetmau > Bordeaux
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -183,21 +184,21 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第7赛段: Hagetmau > Bordeaux 即将开始
+DESCRIPTION:⏳ 环法2026 第7赛段: Hagetmau > Bordeaux 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-8@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260711T191500
 DTEND;TZID=Asia/Shanghai:20260711T234300
-SUMMARY:环法2026 第8赛段: Périgueux > Bergerac
+SUMMARY:⏳ 环法2026 第8赛段: Périgueux > Bergerac
 DESCRIPTION:2026环法自行车赛\\n第8赛段\\n路线: Périgueux > Be
- rgerac\\n类型: Hilly\\n距离: 180.4 km\\n北京时间: 19:15\\n官方
- 来源: https://www.letour.fr/en/stage-8
+ rgerac\\n类型: Hilly\\n距离: 180.4 km\\n状态: 未开赛\\n北京
+ 时间: 19:15\\n官方来源: https://www.letour.fr/en/stage-8
 LOCATION:Périgueux > Bergerac
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -207,21 +208,21 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第8赛段: Périgueux > Bergerac 即将开始
+DESCRIPTION:⏳ 环法2026 第8赛段: Périgueux > Bergerac 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-9@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260712T193500
 DTEND;TZID=Asia/Shanghai:20260713T001000
-SUMMARY:环法2026 第9赛段: Malemort > Ussel
+SUMMARY:⏳ 环法2026 第9赛段: Malemort > Ussel
 DESCRIPTION:2026环法自行车赛\\n第9赛段\\n路线: Malemort > Usse
- l\\n类型: Hilly\\n距离: 185.5 km\\n北京时间: 19:35\\n官方来
- 源: https://www.letour.fr/en/stage-9
+ l\\n类型: Hilly\\n距离: 185.5 km\\n状态: 未开赛\\n北京时间:
+  19:35\\n官方来源: https://www.letour.fr/en/stage-9
 LOCATION:Malemort > Ussel
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -231,21 +232,21 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第9赛段: Malemort > Ussel 即将开始
+DESCRIPTION:⏳ 环法2026 第9赛段: Malemort > Ussel 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-10@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260714T191000
 DTEND;TZID=Asia/Shanghai:20260714T233600
-SUMMARY:环法2026 第10赛段: Aurillac > Le Lioran
+SUMMARY:⏳ 环法2026 第10赛段: Aurillac > Le Lioran
 DESCRIPTION:2026环法自行车赛\\n第10赛段\\n路线: Aurillac > Le 
- Lioran\\n类型: Mountain\\n距离: 166.6 km\\n北京时间: 19:10\\n官
- 方来源: https://www.letour.fr/en/stage-10
+ Lioran\\n类型: Mountain\\n距离: 166.6 km\\n状态: 未开赛\\n北
+ 京时间: 19:10\\n官方来源: https://www.letour.fr/en/stage-10
 LOCATION:Aurillac > Le Lioran
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -255,21 +256,21 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第10赛段: Aurillac > Le Lioran 即将开始
+DESCRIPTION:⏳ 环法2026 第10赛段: Aurillac > Le Lioran 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-11@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260715T195000
 DTEND;TZID=Asia/Shanghai:20260715T235000
-SUMMARY:环法2026 第11赛段: Vichy > Nevers
+SUMMARY:⏳ 环法2026 第11赛段: Vichy > Nevers
 DESCRIPTION:2026环法自行车赛\\n第11赛段\\n路线: Vichy > Nevers
- \\n类型: Flat\\n距离: 161.3 km\\n北京时间: 19:50\\n官方来源:
-  https://www.letour.fr/en/stage-11
+ \\n类型: Flat\\n距离: 161.3 km\\n状态: 未开赛\\n北京时间: 1
+ 9:50\\n官方来源: https://www.letour.fr/en/stage-11
 LOCATION:Vichy > Nevers
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -279,22 +280,23 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第11赛段: Vichy > Nevers 即将开始
+DESCRIPTION:⏳ 环法2026 第11赛段: Vichy > Nevers 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-12@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260716T193000
 DTEND;TZID=Asia/Shanghai:20260716T235000
-SUMMARY:环法2026 第12赛段: Circuit Nevers Magny-Cours > Chalon-sur-S
- aône
+SUMMARY:⏳ 环法2026 第12赛段: Circuit Nevers Magny-Cours > Chalon-s
+ ur-Saône
 DESCRIPTION:2026环法自行车赛\\n第12赛段\\n路线: Circuit Nevers
-  Magny-Cours > Chalon-sur-Saône\\n类型: Flat\\n距离: 179.1 km\\n北
- 京时间: 19:30\\n官方来源: https://www.letour.fr/en/stage-12
+  Magny-Cours > Chalon-sur-Saône\\n类型: Flat\\n距离: 179.1 km\\n状
+ 态: 未开赛\\n北京时间: 19:30\\n官方来源: https://www.letour.
+ fr/en/stage-12
 LOCATION:Circuit Nevers Magny-Cours > Chalon-sur-Saône
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -304,22 +306,22 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第12赛段: Circuit Nevers Magny-Cours > Chalon-s
- ur-Saône 即将开始
+DESCRIPTION:⏳ 环法2026 第12赛段: Circuit Nevers Magny-Cours > Chal
+ on-sur-Saône 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-13@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260717T190000
 DTEND;TZID=Asia/Shanghai:20260718T001200
-SUMMARY:环法2026 第13赛段: Dole > Belfort
+SUMMARY:⏳ 环法2026 第13赛段: Dole > Belfort
 DESCRIPTION:2026环法自行车赛\\n第13赛段\\n路线: Dole > Belfort
- \\n类型: Mountain\\n距离: 205.8 km\\n北京时间: 19:00\\n官方来
- 源: https://www.letour.fr/en/stage-13
+ \\n类型: Mountain\\n距离: 205.8 km\\n状态: 未开赛\\n北京时
+ 间: 19:00\\n官方来源: https://www.letour.fr/en/stage-13
 LOCATION:Dole > Belfort
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -329,21 +331,22 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第13赛段: Dole > Belfort 即将开始
+DESCRIPTION:⏳ 环法2026 第13赛段: Dole > Belfort 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-14@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260718T191000
 DTEND;TZID=Asia/Shanghai:20260718T235200
-SUMMARY:环法2026 第14赛段: Mulhouse > Le Markstein Fellering
+SUMMARY:⏳ 环法2026 第14赛段: Mulhouse > Le Markstein Fellering
 DESCRIPTION:2026环法自行车赛\\n第14赛段\\n路线: Mulhouse > Le 
- Markstein Fellering\\n类型: Mountain\\n距离: 155.3 km\\n北京时间
- : 19:10\\n官方来源: https://www.letour.fr/en/stage-14
+ Markstein Fellering\\n类型: Mountain\\n距离: 155.3 km\\n状态: 未
+ 开赛\\n北京时间: 19:10\\n官方来源: https://www.letour.fr/en/st
+ age-14
 LOCATION:Mulhouse > Le Markstein Fellering
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -353,22 +356,23 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第14赛段: Mulhouse > Le Markstein Fellering 即
- 将开始
+DESCRIPTION:⏳ 环法2026 第14赛段: Mulhouse > Le Markstein Fellering
+  即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-15@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260719T191000
 DTEND;TZID=Asia/Shanghai:20260720T001100
-SUMMARY:环法2026 第15赛段: Champagnole > Plateau de Solaison
+SUMMARY:⏳ 环法2026 第15赛段: Champagnole > Plateau de Solaison
 DESCRIPTION:2026环法自行车赛\\n第15赛段\\n路线: Champagnole > 
- Plateau de Solaison\\n类型: Mountain\\n距离: 183.9 km\\n北京时间
- : 19:10\\n官方来源: https://www.letour.fr/en/stage-15
+ Plateau de Solaison\\n类型: Mountain\\n距离: 183.9 km\\n状态: 未
+ 开赛\\n北京时间: 19:10\\n官方来源: https://www.letour.fr/en/st
+ age-15
 LOCATION:Champagnole > Plateau de Solaison
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -378,22 +382,23 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第15赛段: Champagnole > Plateau de Solaison 即
- 将开始
+DESCRIPTION:⏳ 环法2026 第15赛段: Champagnole > Plateau de Solaison
+  即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-16@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260721T190000
 DTEND;TZID=Asia/Shanghai:20260721T235000
-SUMMARY:环法2026 第16赛段: Évian-les-Bains > Thonon-les-Bains
+SUMMARY:⏳ 环法2026 第16赛段: Évian-les-Bains > Thonon-les-Bains
 DESCRIPTION:2026环法自行车赛\\n第16赛段\\n路线: Évian-les-Bai
  ns > Thonon-les-Bains\\n类型: Individual time-trial\\n距离: 26.1 km\
- \n北京时间: 19:00\\n官方来源: https://www.letour.fr/en/stage-16
+ \n状态: 未开赛\\n北京时间: 19:00\\n官方来源: https://www.le
+ tour.fr/en/stage-16
 LOCATION:Évian-les-Bains > Thonon-les-Bains
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -403,22 +408,22 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第16赛段: Évian-les-Bains > Thonon-les-Bains 
- 即将开始
+DESCRIPTION:⏳ 环法2026 第16赛段: Évian-les-Bains > Thonon-les-Bai
+ ns 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-17@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260722T192000
 DTEND;TZID=Asia/Shanghai:20260722T233900
-SUMMARY:环法2026 第17赛段: Chambery > Voiron
+SUMMARY:⏳ 环法2026 第17赛段: Chambery > Voiron
 DESCRIPTION:2026环法自行车赛\\n第17赛段\\n路线: Chambery > Voi
- ron\\n类型: Hilly\\n距离: 174.7 km\\n北京时间: 19:20\\n官方来
- 源: https://www.letour.fr/en/stage-17
+ ron\\n类型: Hilly\\n距离: 174.7 km\\n状态: 未开赛\\n北京时
+ 间: 19:20\\n官方来源: https://www.letour.fr/en/stage-17
 LOCATION:Chambery > Voiron
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -428,21 +433,21 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第17赛段: Chambery > Voiron 即将开始
+DESCRIPTION:⏳ 环法2026 第17赛段: Chambery > Voiron 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-18@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260723T183500
 DTEND;TZID=Asia/Shanghai:20260723T234000
-SUMMARY:环法2026 第18赛段: Voiron > Orcières-Merlette
+SUMMARY:⏳ 环法2026 第18赛段: Voiron > Orcières-Merlette
 DESCRIPTION:2026环法自行车赛\\n第18赛段\\n路线: Voiron > Orci
- ères-Merlette\\n类型: Mountain\\n距离: 185.2 km\\n北京时间: 18:
- 35\\n官方来源: https://www.letour.fr/en/stage-18
+ ères-Merlette\\n类型: Mountain\\n距离: 185.2 km\\n状态: 未开赛
+ \\n北京时间: 18:35\\n官方来源: https://www.letour.fr/en/stage-18
 LOCATION:Voiron > Orcières-Merlette
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -452,22 +457,22 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第18赛段: Voiron > Orcières-Merlette 即将开
- 始
+DESCRIPTION:⏳ 环法2026 第18赛段: Voiron > Orcières-Merlette 即
+ 将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-19@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260724T200000
 DTEND;TZID=Asia/Shanghai:20260724T234400
-SUMMARY:环法2026 第19赛段: Gap > Alpe d'Huez
+SUMMARY:⏳ 环法2026 第19赛段: Gap > Alpe d'Huez
 DESCRIPTION:2026环法自行车赛\\n第19赛段\\n路线: Gap > Alpe d'H
- uez\\n类型: Mountain\\n距离: 127.9 km\\n北京时间: 20:00\\n官方
- 来源: https://www.letour.fr/en/stage-19
+ uez\\n类型: Mountain\\n距离: 127.9 km\\n状态: 未开赛\\n北京
+ 时间: 20:00\\n官方来源: https://www.letour.fr/en/stage-19
 LOCATION:Gap > Alpe d'Huez
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -477,21 +482,22 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第19赛段: Gap > Alpe d'Huez 即将开始
+DESCRIPTION:⏳ 环法2026 第19赛段: Gap > Alpe d'Huez 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-20@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260725T172000
 DTEND;TZID=Asia/Shanghai:20260725T225000
-SUMMARY:环法2026 第20赛段: Le Bourg d'Oisans > Alpe d'Huez
+SUMMARY:⏳ 环法2026 第20赛段: Le Bourg d'Oisans > Alpe d'Huez
 DESCRIPTION:2026环法自行车赛\\n第20赛段\\n路线: Le Bourg d'Ois
- ans > Alpe d'Huez\\n类型: Mountain\\n距离: 170.9 km\\n北京时间: 
- 17:20\\n官方来源: https://www.letour.fr/en/stage-20
+ ans > Alpe d'Huez\\n类型: Mountain\\n距离: 170.9 km\\n状态: 未开
+ 赛\\n北京时间: 17:20\\n官方来源: https://www.letour.fr/en/stage
+ -20
 LOCATION:Le Bourg d'Oisans > Alpe d'Huez
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -501,22 +507,22 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第20赛段: Le Bourg d'Oisans > Alpe d'Huez 即
- 将开始
+DESCRIPTION:⏳ 环法2026 第20赛段: Le Bourg d'Oisans > Alpe d'Huez 
+ 即将开始
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tdf2026-stage-21@tourdefrance2026
-DTSTAMP:20260704T094807Z
-CREATED:20260704T094807Z
-LAST-MODIFIED:20260704T094807Z
+DTSTAMP:20260704T095805Z
+CREATED:20260704T095805Z
+LAST-MODIFIED:20260704T095805Z
 SEQUENCE:1
 DTSTART;TZID=Asia/Shanghai:20260726T221500
 DTEND;TZID=Asia/Shanghai:20260727T015000
-SUMMARY:环法2026 第21赛段: Thoiry > Paris Champs-Élysées
+SUMMARY:⏳ 环法2026 第21赛段: Thoiry > Paris Champs-Élysées
 DESCRIPTION:2026环法自行车赛\\n第21赛段\\n路线: Thoiry > Paris
-  Champs-Élysées\\n类型: Flat\\n距离: 133 km\\n北京时间: 22:15\
- \n官方来源: https://www.letour.fr/en/stage-21
+  Champs-Élysées\\n类型: Flat\\n距离: 133 km\\n状态: 未开赛\\n
+ 北京时间: 22:15\\n官方来源: https://www.letour.fr/en/stage-21
 LOCATION:Thoiry > Paris Champs-Élysées
 CLASS:PUBLIC
 CATEGORIES:环法自行车赛,Tour de France,2026,Cycling
@@ -526,8 +532,8 @@ TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:环法2026 第21赛段: Thoiry > Paris Champs-Élysées 即
- 将开始
+DESCRIPTION:⏳ 环法2026 第21赛段: Thoiry > Paris Champs-Élysées 
+ 即将开始
 END:VALARM
 END:VEVENT
 END:VCALENDAR
