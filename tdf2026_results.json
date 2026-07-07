@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06 16:22 UTC",
+  "updated_at": "2026-07-07 17:01 UTC",
   "stages": {
     "1": {
       "completed": true,
@@ -30,6 +30,16 @@
       "updated_at": "2026-07-06 16:22 UTC",
       "sequence": 2,
       "source": "https://www.letour.fr/en/rankings/stage-3"
+    },
+    "4": {
+      "completed": true,
+      "winner": "M. PEDERSEN",
+      "time": "04h 10' 45''",
+      "yellow_jersey": "M. PEDERSEN",
+      "team": "LIDL-TREK",
+      "updated_at": "2026-07-07 17:01 UTC",
+      "sequence": 2,
+      "source": "https://www.letour.fr/en/rankings/stage-4"
     }
   }
 }
