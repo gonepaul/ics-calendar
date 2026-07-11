@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-10 16:47 UTC",
+  "updated_at": "2026-07-11 16:25 UTC",
   "stages": {
     "1": {
       "completed": true,
@@ -70,6 +70,16 @@
       "updated_at": "2026-07-10 16:47 UTC",
       "sequence": 2,
       "source": "https://www.letour.fr/en/rankings/stage-7"
+    },
+    "8": {
+      "completed": true,
+      "winner": "T. MERLIER",
+      "time": "03h 52' 50''",
+      "yellow_jersey": "T. MERLIER",
+      "team": "SOUDAL QUICK-STEP",
+      "updated_at": "2026-07-11 16:25 UTC",
+      "sequence": 2,
+      "source": "https://www.letour.fr/en/rankings/stage-8"
     }
   }
 }
