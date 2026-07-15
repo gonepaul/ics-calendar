@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14 15:58 UTC",
+  "updated_at": "2026-07-15 16:03 UTC",
   "stages": {
     "1": {
       "completed": true,
@@ -100,6 +100,16 @@
       "updated_at": "2026-07-14 15:58 UTC",
       "sequence": 2,
       "source": "https://www.letour.fr/en/rankings/stage-10"
+    },
+    "11": {
+      "completed": true,
+      "winner": "S. WAERENSKJOLD",
+      "time": "03h 10' 06''",
+      "yellow_jersey": "S. WAERENSKJOLD",
+      "team": "UNO-X MOBILITY",
+      "updated_at": "2026-07-15 16:03 UTC",
+      "sequence": 2,
+      "source": "https://www.letour.fr/en/rankings/stage-11"
     }
   }
 }
