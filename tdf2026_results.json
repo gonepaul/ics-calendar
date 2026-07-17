@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16 16:42 UTC",
+  "updated_at": "2026-07-17 15:41 UTC",
   "stages": {
     "1": {
       "completed": true,
@@ -120,6 +120,16 @@
       "updated_at": "2026-07-16 16:42 UTC",
       "sequence": 2,
       "source": "https://www.letour.fr/en/rankings/stage-12"
+    },
+    "13": {
+      "completed": true,
+      "winner": "M. SCHMID",
+      "time": "04h 06' 58''",
+      "yellow_jersey": "M. SCHMID",
+      "team": "TEAM JAYCO ALULA",
+      "updated_at": "2026-07-17 15:40 UTC",
+      "sequence": 2,
+      "source": "https://www.letour.fr/en/rankings/stage-13"
     }
   }
 }
