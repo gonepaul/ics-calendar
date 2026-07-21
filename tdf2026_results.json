@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19 16:27 UTC",
+  "updated_at": "2026-07-21 16:24 UTC",
   "stages": {
     "1": {
       "completed": true,
@@ -150,6 +150,16 @@
       "updated_at": "2026-07-19 16:27 UTC",
       "sequence": 2,
       "source": "https://www.letour.fr/en/rankings/stage-15"
+    },
+    "16": {
+      "completed": true,
+      "winner": "R. EVENEPOEL",
+      "time": "00h 32' 19''",
+      "yellow_jersey": "R. EVENEPOEL",
+      "team": "RED BULL - BORA - HANSGROHE",
+      "updated_at": "2026-07-21 16:24 UTC",
+      "sequence": 2,
+      "source": "https://www.letour.fr/en/rankings/stage-16"
     }
   }
 }
