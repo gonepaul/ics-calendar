@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22 16:47 UTC",
+  "updated_at": "2026-07-23 16:47 UTC",
   "stages": {
     "1": {
       "completed": true,
@@ -170,6 +170,16 @@
       "updated_at": "2026-07-22 16:47 UTC",
       "sequence": 2,
       "source": "https://www.letour.fr/en/rankings/stage-17"
+    },
+    "18": {
+      "completed": true,
+      "winner": "R. CARAPAZ",
+      "time": "04h 26' 21''",
+      "yellow_jersey": "R. CARAPAZ",
+      "team": "EF EDUCATION - EASYPOST",
+      "updated_at": "2026-07-23 16:47 UTC",
+      "sequence": 2,
+      "source": "https://www.letour.fr/en/rankings/stage-18"
     }
   }
 }
