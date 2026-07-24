@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23 16:47 UTC",
+  "updated_at": "2026-07-24 16:48 UTC",
   "stages": {
     "1": {
       "completed": true,
@@ -180,6 +180,16 @@
       "updated_at": "2026-07-23 16:47 UTC",
       "sequence": 2,
       "source": "https://www.letour.fr/en/rankings/stage-18"
+    },
+    "19": {
+      "completed": true,
+      "winner": "T. POGACAR",
+      "time": "03h 17' 57''",
+      "yellow_jersey": "T. POGACAR",
+      "team": "UAE TEAM EMIRATES XRG",
+      "updated_at": "2026-07-24 16:48 UTC",
+      "sequence": 2,
+      "source": "https://www.letour.fr/en/rankings/stage-19"
     }
   }
 }
