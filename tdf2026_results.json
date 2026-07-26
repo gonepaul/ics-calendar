@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-25 14:49 UTC",
+  "updated_at": "2026-07-26 17:28 UTC",
   "stages": {
     "1": {
       "completed": true,
@@ -200,6 +200,16 @@
       "updated_at": "2026-07-25 14:49 UTC",
       "sequence": 2,
       "source": "https://www.letour.fr/en/rankings/stage-20"
+    },
+    "21": {
+      "completed": true,
+      "winner": "B. VEISTROFFER",
+      "time": "25 PTS",
+      "yellow_jersey": "B. VEISTROFFER",
+      "team": "LOTTO INTERMARCHE",
+      "updated_at": "2026-07-26 17:28 UTC",
+      "sequence": 2,
+      "source": "https://www.letour.fr/en/rankings/stage-21"
     }
   }
 }
